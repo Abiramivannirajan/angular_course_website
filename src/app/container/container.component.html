@@ -1,0 +1,69 @@
+
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href=""> home</a>
+            <a href="">about</a>
+            <a href="">contact</a>
+        </div>
+        <div class="nav-right">
+            <a>profile</a>
+            <button>login</button>
+        </div>
+    </nav>
+    <div class="searchbar">
+        <input type="text" placeholder="SEARCH THE  COURSE" >
+        <h1> Accelerate Your Career Growth & Upskill Yourself <br>
+            World-Class Certification & Degree Program</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div>
+               <img src= {{card1.imagelocation}}>
+            </div>
+            <div>
+                <h2>{{card1.title}}</h2>
+                {{courseDetails[0]}}
+                <p>{{card1.paragraph}}</p>
+                <button>{{ card1.button}}</button>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src={{card2.imagelocation}}>
+            </div>
+            <div>
+                <h2>{{card2.title}}</h2>
+                <p>{{card2.paragraph}}</p>
+                <button>{{card2.button}}</button>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src={{card3.imagelocation}}>
+
+            </div>
+            <div>
+                <h2>{{card3.title}}</h2>
+                <p>{{card3.paragraph}}</p>
+                <button>{{card3.button}}</button>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <img src={{card4.imagelocation}}>
+            </div>
+            <div>
+                <h2> {{card4.title}}</h2>
+                <p>{{card4.paragraph}}</p>
+                <button>{{card4.button}}</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+        <h2>@copyright : our website</h2>
+        </footer>
+    </div>
+</body>
