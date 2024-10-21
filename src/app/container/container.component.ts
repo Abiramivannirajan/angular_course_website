@@ -11,31 +11,32 @@ export class ContainerComponent {
     imagelocation:"assets/images/js.png" ,
     title:"JAVA",
     paragraph: " This is a java",
-    button:"Add to cart"
+    button:"Apply"
   }
   card2={
     imagelocation:"assets/images/python.png",
     title:"Python",
     paragraph:"This  is a python",
-    button:"Add to cart "
+    button:"Apply "
   }
 card3={
   imagelocation:"assets/images/sql.png",
     title:"Sql",
     paragraph:"This  is a sql",
-    button:"Add to cart"
+    button:"Apply"
     
 }
 card4={
   imagelocation:"assets/images/c.png",
     title:"C",
     paragraph:"This  is a C",
-    button:"Add to cart"
+    button:"Apply"
 } 
 courseDetails = [ this.card1, this.card2, this.card3,this.card4 ] 
-courselist =["java","python","sql","c","abi"]
-addtocard(){
-  alert("added to cart❤️");
+courselist =["java","python","sql","c"]
+
+apply( cardvalue : string){
+  alert(`Welcome to `+cardvalue);  
  }
 
 }

@@ -1,0 +1,21 @@
+.form{
+    
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    background-color: skyblue;
+    border: 2px;
+    border-radius: 50px;
+    border-color: black;
+    width:500px;
+    height: 500px;
+}
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(145, 137, 137);
+    height: 100vh;
+
+}

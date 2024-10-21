@@ -1,5 +1,3 @@
-
-
 <body>
     <nav>
         <div class="nav-left">
@@ -9,7 +7,7 @@
         </div>
         <div class="nav-right">
             <a>profile</a>
-            <button>login</button>
+            <a [routerLink]="'login'"><button>login</button></a>
         </div>
     </nav>
     <div class="searchbar">
@@ -24,9 +22,9 @@
             </div>
             <div>
                 <h2>{{card1.title}}</h2>
-                {{courseDetails[0]}}
+
                 <p>{{card1.paragraph}}</p>
-                <button (click)="addtocard()">{{ card1.button}}</button>
+                <a [routerLink]="'apply'"><button (click)="apply(card1.title)">{{ card1.button}}</button></a>
             </div>
         </div>
         <div class="card">
@@ -36,7 +34,7 @@
             <div>
                 <h2>{{card2.title}}</h2>
                 <p>{{card2.paragraph}}</p>
-                <button (click)="addtocard()">{{card2.button}}</button>
+                <a [routerLink]="'apply'"><button (click)="apply(card2.title)">{{card2.button}}</button></a>
             </div>
         </div>
         <div class="card">
@@ -47,7 +45,7 @@
             <div>
                 <h2>{{card3.title}}</h2>
                 <p>{{card3.paragraph}}</p>
-                <button (click)="addtocard()">{{card3.button}}</button>
+                <a [routerLink]="'apply'"><button (click)="apply(card3.title)">{{card3.button}}</button></a>
             </div>
         </div>
         <div class="card">
@@ -57,11 +55,11 @@
             <div>
                 <h2> {{card4.title}}</h2>
                 <p>{{card4.paragraph}}</p>
-                <button (click)="addtocard()">{{card4.button}}</button>
+                <a [routerLink]="'apply'"><button (click)="apply(card4.title)">{{card4.button}}</button></a>
             </div>
         </div>
     </div>
-     
+    
     <div class="footer">
         <footer>
         <h2>@copyright : our website</h2>
