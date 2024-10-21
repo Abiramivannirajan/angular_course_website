@@ -3,9 +3,9 @@
 <body>
     <nav>
         <div class="nav-left">
-            <a href=""> home</a>
-            <a href="">about</a>
-            <a href="">contact</a>
+            <a href="#home"> home</a>
+            <a href="#about">about</a>
+            <a href="#contact">contact</a>
         </div>
         <div class="nav-right">
             <a>profile</a>
@@ -26,7 +26,7 @@
                 <h2>{{card1.title}}</h2>
                 {{courseDetails[0]}}
                 <p>{{card1.paragraph}}</p>
-                <button>{{ card1.button}}</button>
+                <button (click)="addtocard()">{{ card1.button}}</button>
             </div>
         </div>
         <div class="card">
@@ -36,7 +36,7 @@
             <div>
                 <h2>{{card2.title}}</h2>
                 <p>{{card2.paragraph}}</p>
-                <button>{{card2.button}}</button>
+                <button (click)="addtocard()">{{card2.button}}</button>
             </div>
         </div>
         <div class="card">
@@ -47,7 +47,7 @@
             <div>
                 <h2>{{card3.title}}</h2>
                 <p>{{card3.paragraph}}</p>
-                <button>{{card3.button}}</button>
+                <button (click)="addtocard()">{{card3.button}}</button>
             </div>
         </div>
         <div class="card">
@@ -57,10 +57,11 @@
             <div>
                 <h2> {{card4.title}}</h2>
                 <p>{{card4.paragraph}}</p>
-                <button>{{card4.button}}</button>
+                <button (click)="addtocard()">{{card4.button}}</button>
             </div>
         </div>
     </div>
+     
     <div class="footer">
         <footer>
         <h2>@copyright : our website</h2>
