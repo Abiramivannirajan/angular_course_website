@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./apply.component.css']
 })
 export class ApplyComponent {
+  onclick() {
+      
+  }
+  
+  sumbitpage(coursevalue: string): void {
+    console.log(`display `+coursevalue);
+  }
+  
 
 }

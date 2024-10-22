@@ -7,13 +7,15 @@ import { ContainerComponent } from './container/container.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ApplyComponent } from './apply/apply.component';
+import { SubmitComponent } from './submit/submit.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContainerComponent,
     LoginComponent,
-    ApplyComponent 
+    ApplyComponent,
+    SubmitComponent 
   ],
   imports: [
     BrowserModule,
