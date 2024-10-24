@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { buttonValue } from '../services/buttonValue.service';
 
 @Component({
   selector: 'app-container',
@@ -32,11 +33,18 @@ card4={
     paragraph:"This  is a C",
     button:"Apply"
 } 
-courseDetails = [ this.card1, this.card2, this.card3,this.card4 ] 
+courseDetails = [ this.card1, this.card2, this.card3,this.card4, this.card1,this.card3 ] 
+
 courselist =["java","python","sql","c"]
 
 apply( cardvalue : string){
-  alert(`Welcome to `+cardvalue);  
+  alert(`Welcome to `+ cardvalue);  
+  this.courseName.value = cardvalue.toLowerCase();
  }
+ constructor(private courseName : buttonValue){
+
+ }
+ 
+ somevalue = "";
 
 }

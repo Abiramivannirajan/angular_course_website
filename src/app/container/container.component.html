@@ -6,14 +6,31 @@
             <a href="#contact">contact</a>
         </div>
         <div class="nav-right">
-            <a>profile</a>
+            <a [routerLink]="'profile'"><button>profile</button></a>
             <a [routerLink]="'login'"><button>login</button></a>
         </div>
     </nav>
     <div class="searchbar">
-        <input type="text" placeholder="SEARCH THE  COURSE" >
+        
+        <input type="text" placeholder="SEARCH THE  COURSE" [(ngModel)]="somevalue" >
+        <p>value:{{somevalue}}</p>
+
         <h1> Accelerate Your Career Growth & Upskill Yourself <br>
             World-Class Certification & Degree Program</h1>
+    </div>
+    <div class="container">
+        <div *ngFor = "let course of courseDetails" >
+            <div class="card" >
+                <div>
+                    <img [src]="course.imagelocation" alt="">
+                </div>
+                <div>
+                    <h2>{{course.title}}</h2>
+                    <p>{{course.paragraph}}</p>
+                    <a [routerLink]="'apply'"><button (click)="apply(course.title)">{{ course.button}}</button></a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container">
         <div class="card">
@@ -43,6 +60,8 @@
 
             </div>
             <div>
+                
+
                 <h2>{{card3.title}}</h2>
                 <p>{{card3.paragraph}}</p>
                 <a [routerLink]="'apply'"><button (click)="apply(card3.title)">{{card3.button}}</button></a>

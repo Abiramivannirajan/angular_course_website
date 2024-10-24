@@ -8,6 +8,8 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { ApplyComponent } from './apply/apply.component';
 import { SubmitComponent } from './submit/submit.component';
+import { buttonValue } from './services/buttonValue.service';
+import { ProfileComponent } from './profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -15,14 +17,15 @@ import { SubmitComponent } from './submit/submit.component';
     ContainerComponent,
     LoginComponent,
     ApplyComponent,
-    SubmitComponent 
+    SubmitComponent,
+    ProfileComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ buttonValue],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

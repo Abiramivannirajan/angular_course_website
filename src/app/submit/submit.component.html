@@ -1,219 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Course Outline</title>
 
 </head>
+
 <body>
-    <div class="display">
-        <div class="course">
+    <div class="display" [ngSwitch]="courseName">
+        <div class="course" *ngSwitchCase = "'java'">
 
-    <h1>Java Programming Course</h1>
-    <h2>Course Overview</h2>
-    <p>This course covers the fundamentals of Java programming, including syntax, object-oriented programming concepts, and practical applications.</p>
+            <h1>Java Programming Course</h1>
+            <h2>Course Overview</h2>
+            <p>This course covers the fundamentals of Java programming, including syntax, object-oriented programming
+                concepts, and practical applications.</p>
 
-    <h2>Course Outline</h2>
-    <ul>
-        <li><strong>Module 1: Introduction to Java</strong>
+            <h2>Course Outline</h2>
             <ul>
-                <li>Overview of Java and its applications</li>
-                <li>Setting up the Java development environment</li>
-                <li>Your first Java program</li>
-            </ul>
-        </li>
-        <li><strong>Module 2: Java Basics</strong>
-            <ul>
-                <li>Data types and variables</li>
-                <li>Operators and expressions</li>
-                <li>Control flow statements (if, switch, loops)</li>
-            </ul>
-        </li>
-        <li><strong>Module 3: Object-Oriented Programming</strong>
-            <ul>
-                <li>Classes and objects</li>
-                <li>Inheritance and polymorphism</li>
-                <li>Encapsulation and abstraction</li>
-            </ul>
-        </li>
-        <li><strong>Module 4: Advanced Topics</strong>
-            <ul>
-                <li>Exception handling</li>
-                <li>File I/O operations</li>
-                <li>Multithreading</li>
-            </ul>
-        </li>
-        <li><strong>Module 5: Java Frameworks and Libraries</strong>
-            <ul>
-                <li>Introduction to Java libraries</li>
-                <li>Using popular frameworks (Spring, Hibernate)</li>
-            </ul>
-        </li>
-        <li><strong>Module 6: Final Project</strong>
-            <ul>
-                <li>Building a complete Java application</li>
-                <li>Project presentation and feedback</li>
-            </ul>
-        </li>
-    </ul>
-
-    <h2>Course Requirements</h2>
-    <p>Basic understanding of programming concepts is helpful but not mandatory. Participants should have a computer with Java installed.</p>
-
-    <h2>Contact Information</h2>
-    <p>For more information, please contact us at <a href="mailto:info@javacourse.com">info@javacourse.com</a>.</p>
-        </div>
-        <div class ="course1">
-    
-        
-                <header>
-                    <h1>Python Programming Course Overview</h1>
-                </header>
-            
-                <section id="objectives">
-                    <h2>Course Objectives</h2>
+                <li><strong>Module 1: Introduction to Java</strong>
                     <ul>
-                        <li>Understand the fundamentals of Python programming.</li>
-                        <li>Learn to write clean, efficient code.</li>
-                        <li>Gain experience in problem-solving using Python.</li>
-                        <li>Develop projects that demonstrate your understanding of Python.</li>
-                        <li>Prepare for further studies in computer science or data analysis.</li>
+                        <li>Overview of Java and its applications</li>
+                        <li>Setting up the Java development environment</li>
+                        <li>Your first Java program</li>
                     </ul>
-                </section>
-            
-                <section id="course-structure">
-                    <h2>Course Structure</h2>
-                    <ol>
-                        <li><strong>Introduction to Python:</strong> Installation, setup, and basics.</li>
-                        <li><strong>Data Types and Variables:</strong> Strings, integers, lists, tuples, and dictionaries.</li>
-                        <li><strong>Control Structures:</strong> Conditionals, loops, and error handling.</li>
-                        <li><strong>Functions:</strong> Definition, arguments, return values, and scope.</li>
-                        <li><strong>Modules and Packages:</strong> Importing libraries and using third-party modules.</li>
-                        <li><strong>File Handling:</strong> Reading from and writing to files.</li>
-                        <li><strong>Object-Oriented Programming:</strong> Classes, objects, and inheritance.</li>
-                        <li><strong>Final Project:</strong> Apply your skills to a comprehensive project.</li>
-                    </ol>
-                </section>
-            
-                <section id="prerequisites">
-                    <h2>Prerequisites</h2>
-                    <p>No prior programming experience is required, but familiarity with basic computer operations is helpful.</p>
-                </section>
-            
-                <section id="enrollment">
-                    <h2>Enrollment Information</h2>
-                    <p>To enroll, please contact us at <a href="mailto:enroll@example.com">enroll@example.com</a>.</p>
-                </section>
-            
-                <footer>
-                    <p>&copy; 2024 Python Programming Course. All Rights Reserved.</p>
-                </footer>
-</div>
-        
-        <div class ="course3">
+                </li>
+                <li><strong>Module 2: Java Basics</strong>
+                    <ul>
+                        <li>Data types and variables</li>
+                        <li>Operators and expressions</li>
+                        <li>Control flow statements (if, switch, loops)</li>
+                    </ul>
+                </li>
+                <li><strong>Module 3: Object-Oriented Programming</strong>
+                    <ul>
+                        <li>Classes and objects</li>
+                        <li>Inheritance and polymorphism</li>
+                        <li>Encapsulation and abstraction</li>
+                    </ul>
+                </li>
+                <li><strong>Module 4: Advanced Topics</strong>
+                    <ul>
+                        <li>Exception handling</li>
+                        <li>File I/O operations</li>
+                        <li>Multithreading</li>
+                    </ul>
+                </li>
+                <li><strong>Module 5: Java Frameworks and Libraries</strong>
+                    <ul>
+                        <li>Introduction to Java libraries</li>
+                        <li>Using popular frameworks (Spring, Hibernate)</li>
+                    </ul>
+                </li>
+                <li><strong>Module 6: Final Project</strong>
+                    <ul>
+                        <li>Building a complete Java application</li>
+                        <li>Project presentation and feedback</li>
+                    </ul>
+                </li>
+            </ul>
 
-    
-    <header>
-        <h1>Online SQL Course Overview</h1>
-    </header>
+            <h2>Course Requirements</h2>
+            <p>Basic understanding of programming concepts is helpful but not mandatory. Participants should have a
+                computer with Java installed.</p>
 
-    <section id="description">
-        <h2>Course Description</h2>
-        <p>This online SQL course provides a comprehensive introduction to SQL (Structured Query Language), the standard language for managing and manipulating relational databases. Students will learn how to query databases, create tables, and manage data efficiently.</p>
-    </section>
+            <h2>Contact Information</h2>
+            <p>For more information, please contact us at <a href="mailto:info@javacourse.com">info@javacourse.com</a>.
+            </p>
+        </div>
+        <div class="course1" *ngSwitchCase = "'python'">
 
-    <section id="objectives">
-        <h2>Course Objectives</h2>
-        <ul>
-            <li>Understand the basics of relational databases and SQL syntax.</li>
-            <li>Learn to write SQL queries to retrieve and manipulate data.</li>
-            <li>Gain experience in creating and modifying database tables.</li>
-            <li>Understand advanced SQL topics, including joins, subqueries, and indexes.</li>
-            <li>Apply SQL knowledge to real-world data problems.</li>
-        </ul>
-    </section>
 
-    <section id="syllabus">
-        <h2>Course Syllabus</h2>
-        <ol>
-            <li> <strong>Introduction to Databases:</strong> Overview of database concepts.</li>
-            <li><strong>SQL Basics:</strong> SELECT statements, filtering data.</li>
-            <li><strong>Data Manipulation:</strong> INSERT, UPDATE, DELETE commands.</li>
-            <li><strong>Table Management:</strong> Creating and modifying tables.</li>
-            <li><strong>Joins and Subqueries:</strong> Combining data from multiple tables.</li>
-            <li><strong>Advanced SQL:</strong> Indexes, views, and transactions.</li>
-            <li><strong>Real-World Applications:</strong> Case studies and projects.</li>
-        </ol>
-    </section>
+            <header>
+                <h1>Python Programming Course Overview</h1>
+            </header>
 
-    <section id="prerequisites">
-        <h2>Prerequisites</h2>
-        <p>No prior knowledge of SQL is required, but basic computer skills are helpful. Familiarity with databases is a plus.</p>
-    </section>
+            <section id="objectives">
+                <h2>Course Objectives</h2>
+                <ul>
+                    <li>Understand the fundamentals of Python programming.</li>
+                    <li>Learn to write clean, efficient code.</li>
+                    <li>Gain experience in problem-solving using Python.</li>
+                    <li>Develop projects that demonstrate your understanding of Python.</li>
+                    <li>Prepare for further studies in computer science or data analysis.</li>
+                </ul>
+            </section>
 
-    <section id="enrollment">
-        <h2>Enrollment Information</h2>
-        <p>To enroll in the course, please contact us at <a href="mailto:enroll@example.com">enroll@example.com</a>.</p>
-    </section>
+            <section id="course-structure">
+                <h2>Course Structure</h2>
+                <ol>
+                    <li><strong>Introduction to Python:</strong> Installation, setup, and basics.</li>
+                    <li><strong>Data Types and Variables:</strong> Strings, integers, lists, tuples, and dictionaries.
+                    </li>
+                    <li><strong>Control Structures:</strong> Conditionals, loops, and error handling.</li>
+                    <li><strong>Functions:</strong> Definition, arguments, return values, and scope.</li>
+                    <li><strong>Modules and Packages:</strong> Importing libraries and using third-party modules.</li>
+                    <li><strong>File Handling:</strong> Reading from and writing to files.</li>
+                    <li><strong>Object-Oriented Programming:</strong> Classes, objects, and inheritance.</li>
+                    <li><strong>Final Project:</strong> Apply your skills to a comprehensive project.</li>
+                </ol>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 Online SQL Course. All Rights Reserved.</p>
-    </footer>
-</div>
-<div class ="course4">
+            <section id="prerequisites">
+                <h2>Prerequisites</h2>
+                <p>No prior programming experience is required, but familiarity with basic computer operations is
+                    helpful.</p>
+            </section>
 
-    <header>
-        <h1>Online C Programming Course Overview</h1>
-    </header>
+            <section id="enrollment">
+                <h2>Enrollment Information</h2>
+                <p>To enroll, please contact us at <a href="mailto:enroll@example.com">enroll@example.com</a>.</p>
+            </section>
 
-    <section id="description">
-        <h2>Course Description</h2>
-        <p>This online C programming course is designed for beginners and intermediate programmers looking to enhance their coding skills. Students will learn the fundamentals of C, including data types, control structures, functions, and more.</p>
-    </section>
+            <footer>
+                <p>&copy; 2024 Python Programming Course. All Rights Reserved.</p>
+            </footer>
+        </div>
 
-    <section id="objectives">
-        <h2>Course Objectives</h2>
-        <ul>
-            <li>Understand the syntax and semantics of the C programming language.</li>
-            <li>Learn to write efficient and maintainable code.</li>
-            <li>Gain hands-on experience with programming concepts through practical exercises.</li>
-            <li>Develop problem-solving skills using algorithms and data structures.</li>
-            <li>Prepare for further studies in software development and computer science.</li>
-        </ul>
-    </section>
+        <div class="course3" *ngSwitchCase = "'sql'">
 
-    <section id="syllabus">
-        <h2>Course Syllabus</h2>
-        <ol>
-            <li><strong>Introduction to C:</strong> History, features, and setup.</li>
-            <li><strong>Data Types and Variables:</strong> Basic data types and declarations.</li>
-            <li><strong>Control Structures:</strong> If statements, loops, and switch cases.</li>
-            <li><strong>Functions:</strong> Function definition, arguments, and return values.</li>
-            <li><strong>Pointers and Arrays:</strong> Understanding memory and data storage.</li>
-            <li><strong>Structures and Unions:</strong> Creating complex data types.</li>
-            <li><strong>File I/O:</strong> Reading from and writing to files.</li>
-            <li><strong>Advanced Topics:</strong> Dynamic memory allocation, error handling, and more.</li>
-            <li><strong>Final Project:</strong> Apply your knowledge to a comprehensive coding project.</li>
-        </ol>
-    </section>
 
-    <section id="prerequisites">
-        <h2>Prerequisites</h2>
-        <p>No prior programming experience is required, but basic computer skills are helpful. Familiarity with general programming concepts is a plus.</p>
-    </section>
+            <header>
+                <h1>SQL Course Overview</h1>
+            </header>
 
-    <section id="enrollment">
-        <h2>Enrollment Information</h2>
-        <p>To enroll in the course, please contact us at <a href="mailto:enroll@example.com">enroll@example.com</a>.</p>
-    </section>
+            <section id="description">
+                <h2>Course Description</h2>
+                <p>This online SQL course provides a comprehensive introduction to SQL (Structured Query Language), the
+                    standard language for managing and manipulating relational databases. Students will learn how to
+                    query databases, create tables, and manage data efficiently.</p>
+            </section>
 
-    <footer>
-        <p>&copy; 2024 Online C Programming Course. All Rights Reserved.</p>
-    </footer>
+            <section id="objectives">
+                <h2>Course Objectives</h2>
+                <ul>
+                    <li>Understand the basics of relational databases and SQL syntax.</li>
+                    <li>Learn to write SQL queries to retrieve and manipulate data.</li>
+                    <li>Gain experience in creating and modifying database tables.</li>
+                    <li>Understand advanced SQL topics, including joins, subqueries, and indexes.</li>
+                    <li>Apply SQL knowledge to real-world data problems.</li>
+                </ul>
+            </section>
 
-</div>
+            <section id="syllabus">
+                <h2>Course Syllabus</h2>
+                <ol>
+                    <li> <strong>Introduction to Databases:</strong> Overview of database concepts.</li>
+                    <li><strong>SQL Basics:</strong> SELECT statements, filtering data.</li>
+                    <li><strong>Data Manipulation:</strong> INSERT, UPDATE, DELETE commands.</li>
+                    <li><strong>Table Management:</strong> Creating and modifying tables.</li>
+                    <li><strong>Joins and Subqueries:</strong> Combining data from multiple tables.</li>
+                    <li><strong>Advanced SQL:</strong> Indexes, views, and transactions.</li>
+                    <li><strong>Real-World Applications:</strong> Case studies and projects.</li>
+                </ol>
+            </section>
+
+            <section id="prerequisites">
+                <h2>Prerequisites</h2>
+                <p>No prior knowledge of SQL is required, but basic computer skills are helpful. Familiarity with
+                    databases is a plus.</p>
+            </section>
+
+            <section id="enrollment">
+                <h2>Enrollment Information</h2>
+                <p>To enroll in the course, please contact us at <a
+                        href="mailto:enroll@example.com">enroll@example.com</a>.</p>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 SQL Course. All Rights Reserved.</p>
+            </footer>
+        </div>
+        <div class="course4" *ngSwitchCase = "'c'">
+
+            <header>
+                <h1> C Programming Course </h1>
+            </header>
+
+            <section id="description">
+                <h2>Course Description</h2>
+                <p>This online C programming course is designed for beginners and intermediate programmers looking to
+                    enhance their coding skills. Students will learn the fundamentals of C, including data types,
+                    control structures, functions, and more.</p>
+            </section>
+
+            <section id="objectives">
+                <h2>Course Objectives</h2>
+                <ul>
+                    <li>Understand the syntax and semantics of the C programming language.</li>
+                    <li>Learn to write efficient and maintainable code.</li>
+                    <li>Gain hands-on experience with programming concepts through practical exercises.</li>
+                    <li>Develop problem-solving skills using algorithms and data structures.</li>
+                    <li>Prepare for further studies in software development and computer science.</li>
+                </ul>
+            </section>
+
+            <section id="syllabus">
+                <h2>Course Syllabus</h2>
+                <ol>
+                    <li><strong>Introduction to C:</strong> History, features, and setup.</li>
+                    <li><strong>Data Types and Variables:</strong> Basic data types and declarations.</li>
+                    <li><strong>Control Structures:</strong> If statements, loops, and switch cases.</li>
+                    <li><strong>Functions:</strong> Function definition, arguments, and return values.</li>
+                    <li><strong>Pointers and Arrays:</strong> Understanding memory and data storage.</li>
+                    <li><strong>Structures and Unions:</strong> Creating complex data types.</li>
+                    <li><strong>File I/O:</strong> Reading from and writing to files.</li>
+                    <li><strong>Advanced Topics:</strong> Dynamic memory allocation, error handling, and more.</li>
+                    <li><strong>Final Project:</strong> Apply your knowledge to a comprehensive coding project.</li>
+                </ol>
+            </section>
+
+            <section id="prerequisites">
+                <h2>Prerequisites</h2>
+                <p>No prior programming experience is required, but basic computer skills are helpful. Familiarity with
+                    general programming concepts is a plus.</p>
+            </section>
+
+            <section id="enrollment">
+                <h2>Enrollment Information</h2>
+                <p>To enroll in the course, please contact us at <a
+                        href="mailto:enroll@example.com">enroll@example.com</a>.</p>
+            </section>
+
+            <footer>
+                <p>&copy; 2024 C Programming Course. All Rights Reserved.</p>
+            </footer>
+
+        </div>
     </div>
 </body>
-</html>
 
+</html>

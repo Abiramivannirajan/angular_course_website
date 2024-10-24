@@ -1,0 +1,23 @@
+.profile-container{
+    place-items: center;
+}
+.profile{
+    background-color: rgb(197, 180, 212);
+    padding:20px;
+    text-align: center;
+    justify-content: center;
+    width:30%;
+}
+li{
+   list-style-type: none; 
+}
+ul{
+    padding: 0px;
+    background-color:cadetblue
+}
+img{
+    border-radius: 60%;
+}
+footer{
+    background-color: rgb(122, 150, 150);
+}
