@@ -11,16 +11,16 @@
         </div>
     </nav>
     <div class="searchbar">
-        
-        <input type="text" placeholder="SEARCH THE  COURSE" [(ngModel)]="somevalue" >
-        <p>value:{{somevalue}}</p>
+
+        <input type="text" placeholder="SEARCH THE  COURSE" [(ngModel)]="somevalue">
+        <p>SUGGESTIONS:{{somevalue}}</p>
 
         <h1> Accelerate Your Career Growth & Upskill Yourself <br>
             World-Class Certification & Degree Program</h1>
     </div>
     <div class="container">
-        <div *ngFor = "let course of courseDetails" >
-            <div class="card" >
+        <div *ngFor="let course of courseDetails">
+            <div class="card" *ngIf="course.title.toLowerCase().includes(somevalue)">
                 <div>
                     <img [src]="course.imagelocation" alt="">
                 </div>
@@ -32,10 +32,10 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="card">
             <div>
-               <img src= {{card1.imagelocation}}>
+                <img src={{card1.imagelocation}}>
             </div>
             <div>
                 <h2>{{card1.title}}</h2>
@@ -60,14 +60,14 @@
 
             </div>
             <div>
-                
+
 
                 <h2>{{card3.title}}</h2>
                 <p>{{card3.paragraph}}</p>
                 <a [routerLink]="'apply'"><button (click)="apply(card3.title)">{{card3.button}}</button></a>
             </div>
-          
-            
+
+
         </div>
         <div class="card">
             <div>
@@ -79,11 +79,12 @@
                 <a [routerLink]="'apply'"><button (click)="apply(card4.title)">{{card4.button}}</button></a>
             </div>
         </div>
-    </div>
-    
+    </div> -->
+
     <div class="footer">
         <footer>
-        <h2>@copyright : our website</h2>
+            <h2>: //ourwebsite</h2>
         </footer>
     </div>
+
 </body>

@@ -33,8 +33,7 @@ card4={
     paragraph:"This  is a C",
     button:"Apply"
 } 
-courseDetails = [ this.card1, this.card2, this.card3,this.card4, this.card1,this.card3 ] 
-
+courseDetails = [ this.card1, this.card2, this.card3,this.card4]
 courselist =["java","python","sql","c"]
 
 apply( cardvalue : string){
@@ -47,4 +46,6 @@ apply( cardvalue : string){
  
  somevalue = "";
 
+
+ 
 }
