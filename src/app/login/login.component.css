@@ -17,5 +17,7 @@
     justify-content: center;
     background-color: rgb(145, 137, 137);
     height: 100vh;
-
+}
+input.ng-touched{
+    background-color: rgb(202, 187, 187);
 }

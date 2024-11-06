@@ -7,12 +7,25 @@ import { Component } from '@angular/core';
 })
 export class ApplyComponent {
   onclick() {
-      
+
   }
-  
+  unable = true
+  inputText = ""
+  toEnable(element: any) {
+    this.inputText = (element.target as HTMLInputElement).value
+
+    if (this.inputText.length > 2) {
+      this.unable = false
+    }
+    else {
+      this.unable = true
+    }
+  }
+
+
   sumbitpage(coursevalue: string): void {
-    console.log(`display `+coursevalue);
+    console.log(`display ` + coursevalue);
   }
-  
+
 
 }

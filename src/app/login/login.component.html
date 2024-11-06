@@ -1,22 +1,20 @@
 <div class="background">
-    <div class="form">
-
+    <form class="form" (ngSubmit)= "register(registrationForm)" #registrationForm = "ngForm">
         <h1> APPLICATION FORM</h1>
         <p>
             <label for="Fistname"> First Name</label>
-            <input type="text" id="firstname" name="firstname">
+            <input type="text" id="firstname" name="firstname" ngModel>
         </p>
         <p>
             <label for="lastname"> Last name</label>
-            <input type="text" id="lastname" name="lastname">
+            <input type="text" id="lastname" name="lastname" ngModel>
         </p>
         <p>
             <label for="email">Email</label>
-            <input type="text" id="email" name="email">
+            <input type="email" id="email" name="email" ngModel required email>
         </p>
         <p>
-            <button type="submit">Submit</button>
-        
-
-    </div>
+            <button type="submit" [ngStyle]=" { 'background-color' : registrationForm.valid ? 'green':'red' }">Submit</button>
+    
+        </form>
 </div>

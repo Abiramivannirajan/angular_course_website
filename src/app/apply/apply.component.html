@@ -4,7 +4,7 @@
     <div>
     <p> 
         <label for="Fistname"> First Name</label>
-        <input type="text" id="firstname"name="firstname">
+        <input type="text" id="firstname"name="firstname" (input)="toEnable($event)">
     </p>
     <p>
         <label for="lastname"> Last name</label>
@@ -21,7 +21,7 @@
     <p><label for="Student"> Staff</label>
         <input type ="radio" value="Staff" id="Staff"name="Staff"> </p>
         <p>
-            <a [routerLink]="'/Submitpage'"><button on-click="onclick()" >Submit</button></a>
+            <a [routerLink]="'/Submitpage'"><button on-click="onclick()" [disabled]="unable" >Submit</button></a>
         </p>
 
     </div>

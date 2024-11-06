@@ -33,8 +33,14 @@ card4={
     paragraph:"This  is a C",
     button:"Apply"
 } 
-courseDetails = [ this.card1, this.card2, this.card3,this.card4]
-courselist =["java","python","sql","c"]
+card5={
+  imagelocation:"assets/images/c.png",
+  title:"c++",
+  paragraph:"This is a c++",
+  button:"Apply"
+}
+courseDetails = [ this.card1, this.card2, this.card3,this.card4,this.card5]
+courselist =["java","python","sql","c","c++"]
 
 apply( cardvalue : string){
   alert(`Welcome to `+ cardvalue);  
